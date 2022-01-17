@@ -10,3 +10,7 @@
 <li>No rodapé acrescentei ícones de redes sociais.</li>
 <li>Criei mais secções de conteúdo.</li>
 </ol>
+<p align="center">
+  <img src="/img/Logo-Ghost" width="350" title="hover text">
+ </p>
+
