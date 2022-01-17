@@ -4,13 +4,13 @@
 <h3><em>Para realizar o projeto foram feitas as seguintes mudanças em relação ao projeto original: </em></h3> 
 <ol>
 <li>Acrescentei uma página de apresentação. O botão "Começar", indica como hyperlink a página <em>index.html</em>.</li>
+ ❮img src="layout/l1.jpg" ❯
 <li>Na <em>index.html</em>, alterei o head, acrescentando o favicon.</li>
 <li>Criei uma logo para o Streaming.</li>
 <li>Acrescentei novas funcionalidades ao Menu, incluindo uma aba de pesquisa.</li>
 <li>No rodapé acrescentei ícones de redes sociais.</li>
 <li>Criei mais secções de conteúdo.</li>
 </ol>
-<p align="center">
-  <img src="/img/Logo-Ghost" width="350" title="hover text">
- </p>
+
+
 
