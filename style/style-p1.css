@@ -1,0 +1,315 @@
+/*Adição de Fontes */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+
+*, *::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(10deg, #6C63FF,black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+  }
+
+  .content {
+    padding: 2rem;
+   
+  }
+
+  .cartao {
+    position: relative;
+    color: #fff;
+    width: 640px;
+    height: 900px;
+    align-items: center;
+    transform-style: preserve-3d;
+  }
+
+  .comum-cartao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem 3rem;
+    backface-visibility: hidden;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .face-1 {
+    background-image: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.05)
+    );
+    transform-origin: right;
+    transform: translate(0%) perspective(0px) rotateY(0deg);
+  }
+  
+  .face-2 {
+    background-image: linear-gradient(
+      60deg,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.05)
+    );
+    transform-origin: left;
+    transform: translateX(100%) perspective(1000px) rotateY(100deg);
+  }
+  
+  .content:hover .face-1 {
+    transform: translate(-100%) perspective(1000px) rotateY(-100deg);
+  }
+  
+  .content:hover .face-2 {
+    transform: translate(0%) perspective(0px) rotateY(0deg);
+  }
+  .face-1 .hide {
+    opacity: 1;
+    transition: 0.7s;
+  }
+  
+  .face-2 .hide {
+    opacity: 0;
+    transition: 0.7s;
+  }
+  
+  .content:hover .face-1 .hide {
+    opacity: 0;
+  }
+  
+  .content:hover .face-2 .hide {
+    opacity: 1;
+  }
+
+ 
+
+/*Parte superior */
+
+/*Logo*/
+  .logo {
+    width: 90px;
+    transform: translateZ(40px);
+    transform-style: preserve-3d
+    
+  }
+  .logo img{
+    filter: invert(1)
+  }
+/*Título do site */
+  .face-1 .parte-superior > h2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 2px;
+    margin: 0.4rem 0 0.6rem;
+    transform: translateZ(50px);
+    transform-style: preserve-3d;
+  }
+
+  /*Parte inferior */
+  .parte-inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*Seta */
+  .seta {
+    width: 35px;
+    padding-top: 0.3rem;
+    transform: translateZ(45px);
+    transform-style: preserve-3d;
+  }
+
+  .seta img {
+    filter: invert(1);
+    animation: move 0.5s infinite ease alternate;
+  }
+  @keyframes move {
+    from {
+      transform: translateX(-5px);
+    }
+    to {
+      transform: translateX(5px);
+    }
+  }
+
+/*Mensagem */
+  .mensagem1 {
+    font-weight: 400;
+    font-size: 5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 0.95;
+    display: flex;
+    transform: translateZ(45px);
+    transform-style: preserve-3d;
+  }
+  
+  .mensagem1 span {
+    font-size: 1.4rem;
+    margin-right: 0.2rem;
+  }
+
+/*Segunda face */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mensagen2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 0.5rem;
+  transform: translateZ(35px);
+  transform-style: preserve-3d;
+}
+
+.wish {
+  color: #fff;
+  font-size: 5rem;
+  transform: translateZ(30px);
+  transform-style: preserve-3d;
+}
+
+.mensagem3 {
+  list-style: none;
+  margin: 3rem 0;
+  color: #eee;
+  font-weight: 300;
+  transform: translateZ(40px);
+  transform-style: preserve-3d;
+  font-size: 40px;
+}
+
+.mensagem3 li {
+  margin-bottom: 0.3rem;
+}
+
+
+.mensagem5 li {
+  margin-bottom: 0.3rem;
+}
+
+
+
+
+/*Botão1*/
+.index {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.botao {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color:yellow;
+  border-radius: 25px;
+  color: #6C63FF;
+  transition: background-color 0.3s, opacity 0.7s !important;
+  transform: translateZ(45px);
+  transform-style: preserve-3d;
+  font-size: 30px;
+ }
+
+
+.botao:hover {
+  background-color: rgb(7, 5, 7);
+  color:#eee;
+}
+
+
+
+
+
+.Noite-Terror-Imagem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  transform-style: preserve-3d;
+  pointer-events: none;
+  filter: invert(1)
+  
+}
+
+.padrao-img {
+  position: absolute;
+  width: 130%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -55%) translateZ(200px);
+  transform-style: preserve-3d;
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.2));
+  animation: float 2s alternate ease-in-out infinite;
+  transition: 0.65s;
+  
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(calc(-45% - 5px)) translateY(calc(-55% - 5px))
+      translateZ(200px);
+  }
+
+  100% {
+    transform: translateX(calc(-45% + 5px)) translateY(calc(-55% + 5px))
+      translateZ(400px);
+  }
+}
+
+.padrao {
+  transform: rotate(-30deg);
+  transition: 0.6s;
+}
+
+.content:hover .padrao-img {
+  width: 115%;
+  top: 67%;
+}
+
+.content:hover .ilustacao-padrao {
+  transform: rotate(-17deg);
+}
+
+
+
+
+
+@media (max-width: 550px) {
+  .content {
+    transform: scale(0.63);
+  }
+}
+
+
